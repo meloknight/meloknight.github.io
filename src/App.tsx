@@ -1,7 +1,13 @@
-// import { useState } from "react";
-
 import { useState } from "react";
 import "./App.scss";
+
+import { TiHome } from "react-icons/ti";
+import { FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
 
 function App() {
   const [page, setPage] = useState(0);
@@ -9,16 +15,34 @@ function App() {
 
   function HomeScreen() {
     return (
-      <div className="name-centering-container">
-        <div className="first-name">brody</div>
-        <div className="last-name">knight</div>
+      <div className="home-centering-container">
+        <div className="first-name">
+          <span>B</span>
+          <span>R</span>
+          <span>&#123; &#125;</span>
+          <span>D</span>
+          <span>Y</span>
+        </div>
+        <div className="last-name">
+          <span>K</span>
+          <span>N</span>
+          <span>I</span>
+          <span>G</span>
+          <span>H</span>
+          <span>T</span>
+        </div>
         <div className="description-container">
-          <div className="title">web developer</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            commodi dolore nostrum quas suscipit soluta, eligendi optio
-            inventore rem a earum dicta dignissimos eius repudiandae! Deserunt
-          </p>
+          <div>Front-End React Developer</div>
+          <div>
+            <span className="tech-stack">Tech Stack:</span>
+
+            <FaReact style={{ color: "#61dbfb" }} />
+            <SiJavascript style={{ color: "#F0DB4F" }} />
+            <FaHtml5 style={{ color: "#e34c26" }} />
+            <FaCss3Alt style={{ color: "#264de4" }} />
+            <SiTypescript style={{ color: "#007acc" }} />
+            <FaSass style={{ color: "#cc6699" }} />
+          </div>
         </div>
       </div>
     );
@@ -26,18 +50,51 @@ function App() {
 
   const ContactScreen = () => {
     return (
-      <div className="name-centering-container">
-        <div className="first-name">contact me</div>
-        <div className="last-name">knight</div>
-        <div className="description-container">
-          <div className="title">web developer</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            commodi dolore nostrum quas suscipit soluta, eligendi optio
-            inventore rem a earum dicta dignissimos eius repudiandae! Deserunt
-          </p>
-        </div>
-        <button onClick={() => setPage(0)}>home</button>
+      <div className="contact-centering-container">
+        <h1>Contact Me</h1>
+        <p>
+          Feel free to shoot me a call or email if you are interested in working
+          together.
+        </p>
+        <h2>Phone: 123-456-7890</h2>
+        <h2>Email: brody@email.com</h2>
+      </div>
+    );
+  };
+
+  const AboutScreen = () => {
+    return (
+      <div className="contact-centering-container">
+        <h1>About Me</h1>
+        <h3>
+          Hello, my name is Brody and I am a front-end react developer based in
+          Kelowna, BC.
+        </h3>
+        <p>
+          As a junior Front-End Developer, I have honed in on a strong set of
+          skills in React, HTML, CSS, Javascript, Typescript, and SCSS. I excel
+          in the creation and maintenance of responsive websites that offer a
+          great user experience. I have worked in numerous groups and consider
+          myself a strong team player. I dealt with countless clients in my
+          previous work in the insurance industry and know how to manage client
+          expectations while balancing a heavy workload. Lastly, I have a degree
+          in mechanical engineering which vastly improved my problem solving
+          skills and grit.
+        </p>
+      </div>
+    );
+  };
+
+  const PortfolioScreen = () => {
+    return (
+      <div className="contact-centering-container">
+        <h1>Portfolio</h1>
+        <p>
+          Feel free to shoot me a call or email if you are interested in working
+          together.
+        </p>
+        <h2>Phone: 123-456-7890</h2>
+        <h2>Email: brody@email.com</h2>
       </div>
     );
   };
@@ -47,6 +104,12 @@ function App() {
       return <HomeScreen />;
     } else if (page === 1) {
       return <ContactScreen />;
+    } else if (page === 2) {
+      return <AboutScreen />;
+    } else if (page === 3) {
+      return <PortfolioScreen />;
+    } else {
+      return <HomeScreen />;
     }
   }
 
@@ -63,7 +126,7 @@ function App() {
           className="main-container contact-container main-container-hover nav-button"
           onClick={() => setPage(1)}
         >
-          contact
+          CONTACT
         </section>
 
         <section className="primary-container">
@@ -73,14 +136,23 @@ function App() {
           {/* <ContactScreen /> */}
         </section>
 
-        <section className="home-container main-container-hover nav-button">
-          hm
+        <section
+          className="home-container main-container-hover nav-button"
+          onClick={() => setPage(0)}
+        >
+          <TiHome className="home-icon" />
         </section>
-        <section className="about-container main-container-hover nav-button">
-          about
+        <section
+          className="about-container main-container-hover nav-button"
+          onClick={() => setPage(2)}
+        >
+          ABOUT
         </section>
-        <section className="portfolio-container main-container-hover nav-button">
-          portfolio
+        <section
+          className="portfolio-container main-container-hover nav-button"
+          onClick={() => setPage(3)}
+        >
+          PORTFOLIO
         </section>
       </div>
     </>

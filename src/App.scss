@@ -6,8 +6,13 @@
   padding: 0;
 }
 
-$primary-color: rgb(205, 224, 202);
-$secondary-color: rgb(102, 126, 97);
+// $primary-color: #ffffece8;
+$primary-color: white;
+$secondary-color: #f1e4c35e;
+$tertiary-color: #c6a969;
+$quaternary-color: #597e52;
+
+$text-black: black;
 
 .body-container {
   padding: 10px;
@@ -17,86 +22,130 @@ $secondary-color: rgb(102, 126, 97);
   width: 100vw;
   background-color: $secondary-color;
   display: grid;
-  grid-template-columns: 1.5fr 6fr 6fr;
-  grid-template-rows: 7fr 1fr;
+  grid-template-columns: 1fr 6fr 6fr;
+  grid-template-rows: 6fr 1fr;
   gap: 10px;
   font-size: 4rem;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   overflow: hidden;
 }
 
 .background-image-container {
-  // width: 800px;
-  // overflow: hidden;
   position: absolute;
-
-  // border: 2px dashed red;
   top: -1200px;
-  left: -200px;
+  left: 000px;
   object-fit: contain;
 }
 
 .background-image-container img {
   object-fit: contain;
-  width: 2400px;
+  width: 3000px;
   z-index: -1;
 }
 
-.nav-button {
-  border-radius: 5px;
-}
-
 .main-container-hover {
-  color: rgb(0, 0, 0);
+  color: $text-black;
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: $primary-color;
   transition: all 0.2s ease-in;
   z-index: 10;
+  border: 2px solid rgb(0, 0, 0);
+  letter-spacing: 1rem;
+  font-size: 2.5rem;
 }
 
 .main-container-hover:hover {
   background-color: $secondary-color;
-  color: rgb(214, 214, 214);
-  // border: 1px dashed black;
-  // margin: 5px;
 }
 
 .contact-container {
   writing-mode: vertical-rl;
   text-orientation: upright;
-  letter-spacing: -16px;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+}
+
+.home-container {
+  font-size: 3.5rem;
 }
 
 .primary-container {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.527);
+  border: 2px solid rgb(255, 255, 255);
   display: grid;
   align-items: center;
   justify-content: center;
   z-index: 2;
   grid-column-start: 2;
   grid-column-end: 4;
+  font-size: 6rem;
 }
 
-.name-centering-container {
-  border: 2px dashed black;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// PRIMARY CONTAINER FOR CONTENT - HOME
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.home-centering-container {
   padding: 20px;
-  background-color: rgb(255, 12, 12);
-  color: black;
   width: 600px;
 }
 
-.description-container {
-  // background-color: black;
-  // color: white;
+.first-name,
+.last-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.description-container p {
-  font-size: 0.8rem;
-  text-wrap: wrap;
+.first-name {
+  font-size: 6rem;
 }
 
-.portfolio-container {
-  letter-spacing: 0.5rem;
+.first-name > span {
+  margin-left: -7px;
 }
+
+.last-name {
+  font-size: 3rem;
+}
+
+.first-name > span,
+.last-name > span {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.description-container > div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.tech-stack {
+  font-size: 2rem;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// PRIMARY CONTAINER FOR CONTENT - CONTACT
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.contact-centering-container {
+  color: white;
+  font-size: 1rem;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// PRIMARY CONTAINER FOR CONTENT - ABOUT
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// PRIMARY CONTAINER FOR CONTENT - PORTFOLIO
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

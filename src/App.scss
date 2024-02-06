@@ -1,3 +1,102 @@
-.heading {
-  background-color: red;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$primary-color: rgb(205, 224, 202);
+$secondary-color: rgb(102, 126, 97);
+
+.body-container {
+  padding: 10px;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: $secondary-color;
+  display: grid;
+  grid-template-columns: 1.5fr 6fr 6fr;
+  grid-template-rows: 7fr 1fr;
+  gap: 10px;
+  font-size: 4rem;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+.background-image-container {
+  // width: 800px;
+  // overflow: hidden;
+  position: absolute;
+
+  // border: 2px dashed red;
+  top: -1200px;
+  left: -200px;
+  object-fit: contain;
+}
+
+.background-image-container img {
+  object-fit: contain;
+  width: 2400px;
+  z-index: -1;
+}
+
+.nav-button {
+  border-radius: 5px;
+}
+
+.main-container-hover {
+  color: rgb(0, 0, 0);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+  transition: all 0.2s ease-in;
+  z-index: 10;
+}
+
+.main-container-hover:hover {
+  background-color: $secondary-color;
+  color: rgb(214, 214, 214);
+  // border: 1px dashed black;
+  // margin: 5px;
+}
+
+.contact-container {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: -16px;
+}
+
+.primary-container {
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.name-centering-container {
+  border: 2px dashed black;
+  padding: 20px;
+  background-color: rgb(255, 12, 12);
+  color: black;
+  width: 600px;
+}
+
+.description-container {
+  // background-color: black;
+  // color: white;
+}
+
+.description-container p {
+  font-size: 0.8rem;
+  text-wrap: wrap;
+}
+
+.portfolio-container {
+  letter-spacing: 0.5rem;
 }

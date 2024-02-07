@@ -10,8 +10,7 @@ import { SiTypescript } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 
 function App() {
-  const [page, setPage] = useState(0);
-  const pageList = ["home", "contact", "about", "portfolio"];
+  const [page, setPage] = useState("home");
 
   function HomeScreen() {
     return (
@@ -68,7 +67,7 @@ function App() {
         <h1>About Me</h1>
         <h3>
           Hello, my name is Brody and I am a front-end react developer based in
-          Kelowna, BC.
+          the Okanagan, BC.
         </h3>
         <p>
           As a junior Front-End Developer, I have honed in on a strong set of
@@ -100,13 +99,13 @@ function App() {
   };
 
   function choosePage() {
-    if (page === 0) {
+    if (page === "home") {
       return <HomeScreen />;
-    } else if (page === 1) {
+    } else if (page === "contact") {
       return <ContactScreen />;
-    } else if (page === 2) {
+    } else if (page === "about") {
       return <AboutScreen />;
-    } else if (page === 3) {
+    } else if (page === "portfolio") {
       return <PortfolioScreen />;
     } else {
       return <HomeScreen />;
@@ -124,7 +123,7 @@ function App() {
         </div>
         <section
           className="main-container contact-container main-container-hover nav-button"
-          onClick={() => setPage(1)}
+          onClick={() => setPage("contact")}
         >
           CONTACT
         </section>
@@ -138,19 +137,19 @@ function App() {
 
         <section
           className="home-container main-container-hover nav-button"
-          onClick={() => setPage(0)}
+          onClick={() => setPage("home")}
         >
           <TiHome className="home-icon" />
         </section>
         <section
           className="about-container main-container-hover nav-button"
-          onClick={() => setPage(2)}
+          onClick={() => setPage("about")}
         >
           ABOUT
         </section>
         <section
           className="portfolio-container main-container-hover nav-button"
-          onClick={() => setPage(3)}
+          onClick={() => setPage("portfolio")}
         >
           PORTFOLIO
         </section>

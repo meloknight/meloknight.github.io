@@ -55,8 +55,8 @@ function App() {
           Feel free to shoot me a call or email if you are interested in working
           together.
         </p>
-        <h2>Phone: 123-456-7890</h2>
-        <h2>Email: brody@email.com</h2>
+        <h2>Phone: 825-440-0123</h2>
+        <h2>Email: brody.k.knight@gmail.com</h2>
       </div>
     );
   };
@@ -66,19 +66,17 @@ function App() {
       <div className="about-centering-container">
         <h1>About Me</h1>
         <h3>
-          Hello, my name is Brody and I am a front-end react developer based in
+          Hello, my name is Brody and I am a front-end web developer based in
           the Okanagan, BC.
         </h3>
         <p>
-          As a junior Front-End Developer, I have honed in on a strong set of
-          skills in React, HTML, CSS, Javascript, Typescript, and SCSS. I excel
-          in the creation and maintenance of responsive websites that offer a
-          great user experience. I have worked in numerous groups and consider
-          myself a strong team player. I dealt with countless clients in my
-          previous work in the insurance industry and know how to manage client
-          expectations while balancing a heavy workload. Lastly, I have a degree
-          in mechanical engineering which vastly improved my problem solving
-          skills and grit.
+          My current toolset rests in React, HTML, CSS, Javascript, Typescript,
+          and SCSS. I excel in the creation and maintenance of responsive
+          websites that offer a great user experience. I have dealt with
+          countless clients in my previous work in the insurance industry and
+          know how to manage client expectations while balancing a heavy
+          workload. I also have a degree in mechanical engineering which greatly
+          improved my problem solving skills and grit.
         </p>
       </div>
     );
@@ -108,8 +106,6 @@ function App() {
   };
 
   const PortfolioScreen = () => {
-    // let portfolioUrl: string = "https://meloknight.github.io/admin_dashboard/";
-
     return (
       <div className="portfolio-centering-container">
         <div className="portfolio-section-title">Portfolio</div>
@@ -117,55 +113,50 @@ function App() {
           {/* CARD 1 */}
           <a
             href={"https://meloknight.github.io/admin_dashboard/"}
-            className="project-card"
+            className="project-card project-1-card"
           >
             <div className="project-card-top">
               <h1>Admin Dashboard</h1>
-              <p>An admin dashboard project created using HTML and CSS</p>
+              <p>
+                A dashboard project created using HTML and CSS to display a
+                grasp of the fundamentals of styling web pages.
+              </p>
             </div>
-            <div className="project-card-bottom">
-              <img
-                src="https://mail.google.com/mail/u/0?ui=2&ik=b680adbe95&attid=0.1&permmsgid=msg-a:r759417969101254129&th=18d8658b9a6384b1&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8XoWjUxmm-exMpq7mLTIpaF_T663y_ttuWRGGimzcWTYRMUMzxEadzFxXqu6BkNCt8VocULiPfQRFbolF-9wiyiuQQRyH0la2rLtFY1Eo0aiuBqPyp1YJFCs0&disp=emb&realattid=ii_lscjmjpu0"
-                alt="project 1"
-              />
+            <div className="project-card-bottom project-1-card-bottom">
+              <img src="src/assets/admin-dashboard-img.png" alt="project 1" />
             </div>
           </a>
           {/* CARD 2 */}
           <a
             href={"https://meloknight.github.io/Weather-App/"}
-            className="project-card"
+            className="project-card project-2-card"
           >
             <div className="project-card-top">
-              <h1>Project Name</h1>
+              <h1>Weather App</h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Deleniti, quos. Inventore ratione dicta quidem culpa.
               </p>
             </div>
-            <div className="project-card-bottom">
-              <img
-                src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
-                alt="project 1"
-              />
+            <div className="project-card-bottom project-2-card-bottom">
+              <img src="src/assets/Weather-App.png" alt="project 1" />
             </div>
           </a>
           {/* CARD 3 */}
           <a
-            href={"https://meloknight.github.io/admin_dashboard/"}
-            className="project-card"
+            href={"https://meloknight.github.io/Etch-A-Sketch/"}
+            className="project-card project-3-card"
           >
             <div className="project-card-top">
-              <h1>Project Name</h1>
+              <h1>Etch-A-Sketch</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deleniti, quos. Inventore ratione dicta quidem culpa.
+                A project created with Javascript, HTML, and CSS intended to
+                showcase my ability to use logic and DOM manipulation with a
+                small web application.
               </p>
             </div>
-            <div className="project-card-bottom">
-              <img
-                src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
-                alt="project 1"
-              />
+            <div className="project-card-bottom project-3-card-bottom">
+              <img src="src/assets/Etch-A-Sketch-img.png" alt="project 1" />
             </div>
           </a>
         </div>

@@ -63,7 +63,7 @@ function App() {
 
   const AboutScreen = () => {
     return (
-      <div className="contact-centering-container">
+      <div className="about-centering-container">
         <h1>About Me</h1>
         <h3>
           Hello, my name is Brody and I am a front-end react developer based in
@@ -84,16 +84,91 @@ function App() {
     );
   };
 
-  const PortfolioScreen = () => {
+  const ProjectCard = () => {
     return (
-      <div className="contact-centering-container">
-        <h1>Portfolio</h1>
-        <p>
-          Feel free to shoot me a call or email if you are interested in working
-          together.
-        </p>
-        <h2>Phone: 123-456-7890</h2>
-        <h2>Email: brody@email.com</h2>
+      <a
+        href={"https://meloknight.github.io/admin_dashboard/"}
+        className="project-card"
+      >
+        <div className="project-card-top">
+          <h1>Project Name</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+            quos. Inventore ratione dicta quidem culpa.
+          </p>
+        </div>
+        <div className="project-card-bottom">
+          <img
+            src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
+            alt="project 1"
+          />
+        </div>
+      </a>
+    );
+  };
+
+  const PortfolioScreen = () => {
+    // let portfolioUrl: string = "https://meloknight.github.io/admin_dashboard/";
+
+    return (
+      <div className="portfolio-centering-container">
+        <div className="portfolio-section-title">Portfolio</div>
+        <div className="project-card-container">
+          {/* CARD 1 */}
+          <a
+            href={"https://meloknight.github.io/admin_dashboard/"}
+            className="project-card"
+          >
+            <div className="project-card-top">
+              <h1>Admin Dashboard</h1>
+              <p>An admin dashboard project created using HTML and CSS</p>
+            </div>
+            <div className="project-card-bottom">
+              <img
+                src="https://mail.google.com/mail/u/0?ui=2&ik=b680adbe95&attid=0.1&permmsgid=msg-a:r759417969101254129&th=18d8658b9a6384b1&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8XoWjUxmm-exMpq7mLTIpaF_T663y_ttuWRGGimzcWTYRMUMzxEadzFxXqu6BkNCt8VocULiPfQRFbolF-9wiyiuQQRyH0la2rLtFY1Eo0aiuBqPyp1YJFCs0&disp=emb&realattid=ii_lscjmjpu0"
+                alt="project 1"
+              />
+            </div>
+          </a>
+          {/* CARD 2 */}
+          <a
+            href={"https://meloknight.github.io/Weather-App/"}
+            className="project-card"
+          >
+            <div className="project-card-top">
+              <h1>Project Name</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti, quos. Inventore ratione dicta quidem culpa.
+              </p>
+            </div>
+            <div className="project-card-bottom">
+              <img
+                src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
+                alt="project 1"
+              />
+            </div>
+          </a>
+          {/* CARD 3 */}
+          <a
+            href={"https://meloknight.github.io/admin_dashboard/"}
+            className="project-card"
+          >
+            <div className="project-card-top">
+              <h1>Project Name</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti, quos. Inventore ratione dicta quidem culpa.
+              </p>
+            </div>
+            <div className="project-card-bottom">
+              <img
+                src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
+                alt="project 1"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     );
   };

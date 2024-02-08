@@ -8,7 +8,7 @@
 
 // $primary-color: #ffffece8;
 $primary-color: white;
-$secondary-color: #f1e4c35e;
+$secondary-color: #f1e4c35b;
 $tertiary-color: #c6a969;
 $quaternary-color: #597e52;
 
@@ -22,7 +22,7 @@ $text-black: black;
   width: 100vw;
   background-color: $secondary-color;
   display: grid;
-  grid-template-columns: 1fr 6fr 6fr;
+  grid-template-columns: 1fr 4fr 8fr;
   grid-template-rows: 6fr 1fr;
   gap: 10px;
   font-size: 4rem;
@@ -76,7 +76,7 @@ $text-black: black;
 }
 
 .primary-container {
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.685);
   border: 2px solid rgb(255, 255, 255);
   display: grid;
   align-items: center;
@@ -144,12 +144,119 @@ $text-black: black;
 .contact-centering-container {
   color: white;
   font-size: 1rem;
+  border: 2px solid white;
+  width: 500px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 0 20px 0 20px;
+}
+
+.contact-centering-container > h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact-centering-container > p {
+  margin-bottom: 10px;
+}
+
+.contact-centering-container > h2 {
+  margin-bottom: 10px;
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // PRIMARY CONTAINER FOR CONTENT - ABOUT
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.about-centering-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.712);
+  font-size: 1rem;
+  border: 2px solid white;
+  width: 700px;
+  padding: 20px;
+  border-radius: 0 20px 0 20px;
+}
+
+.about-centering-container > h1 {
+  font-size: 2.5rem;
+  // border: 2px solid red;
+}
+
+.about-centering-container > h3,
+.about-centering-container > p {
+  padding-left: 25px;
+}
+
+.about-centering-container > p {
+  font-size: 1.2rem;
+}
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // PRIMARY CONTAINER FOR CONTENT - PORTFOLIO
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.portfolio-centering-container {
+  color: white;
+  font-size: 1rem;
+  // border: 2px solid white;
+  // width: 800px;
+  // padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-section-title {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.project-card {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  width: 250px;
+  height: 400px;
+  transition: all 0.3s;
+  overflow: hidden;
+  border-radius: 0 20px 0 20px;
+}
+
+.project-card:hover {
+  color: red;
+}
+
+.project-card-top {
+  margin: 15px;
+  height: 30%;
+}
+
+.project-card-top > h1 {
+  padding-bottom: 10px;
+}
+
+.project-card-bottom {
+  overflow: hidden;
+  position: relative;
+  height: 70%;
+  // border: 2px solid red;
+}
+
+.project-card-bottom > img {
+  position: absolute;
+  height: 400px;
+  top: -50px;
+  // z-index: 10;
+}

@@ -191,7 +191,7 @@ function App() {
           className="main-container contact-container main-container-hover nav-button"
           onClick={() => setPage("contact")}
         >
-          CONTACT
+          C
         </section>
 
         <section className="primary-container">
@@ -211,13 +211,13 @@ function App() {
           className="about-container main-container-hover nav-button"
           onClick={() => setPage("about")}
         >
-          ABOUT
+          A
         </section>
         <section
           className="portfolio-container main-container-hover nav-button"
           onClick={() => setPage("portfolio")}
         >
-          PORTFOLIO
+          P
         </section>
       </div>
     </>

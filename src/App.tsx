@@ -1,23 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.scss";
 
 import { TiHome } from "react-icons/ti";
-import { FaReact } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaSass } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaQuestionCircle } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaQuestionCircle,
+} from "react-icons/fa";
+import { SiJavascript, SiTypescript } from "react-icons/si";
+import { MdEmail, MdWork } from "react-icons/md";
 
 function App() {
   const [page, setPage] = useState("home");
 
   function HomeScreen() {
+    console.log(page);
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+      setIsLoaded(true);
+    }, []);
+
     return (
-      <div className="home-centering-container">
+      <div className={`home-centering-container ${isLoaded ? "rendered" : ""}`}>
         <div className="first-name">
           <span>B</span>
           <span>R</span>
@@ -51,8 +59,17 @@ function App() {
   }
 
   const ContactScreen = () => {
+    console.log(page);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+      setIsLoaded(true);
+    }, []);
+
     return (
-      <div className="contact-centering-container">
+      <div
+        className={`contact-centering-container ${isLoaded ? "rendered" : ""}`}
+      >
         <h1>Contact Me</h1>
         <p>
           Feel free to shoot me a call or email if you are interested in working
@@ -65,8 +82,17 @@ function App() {
   };
 
   const AboutScreen = () => {
+    console.log(page);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+      setIsLoaded(true);
+    }, []);
+
     return (
-      <div className="about-centering-container">
+      <div
+        className={`about-centering-container ${isLoaded ? "rendered" : ""}`}
+      >
         <h1>About Me</h1>
         <h3>
           Hello, my name is Brody and I am a front-end web developer based in
@@ -109,8 +135,20 @@ function App() {
   };
 
   const PortfolioScreen = () => {
+    console.log(page);
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+      setIsLoaded(true);
+    }, []);
+
     return (
-      <div className="portfolio-centering-container">
+      <div
+        className={`portfolio-centering-container ${
+          isLoaded ? "rendered" : ""
+        }`}
+      >
         <div className="portfolio-section-title">Portfolio</div>
         <div className="project-card-container">
           {/* CARD 1 */}
@@ -190,6 +228,7 @@ function App() {
       <div className="body-container">
         <div className="background-image-container">
           <img
+            className="pan-image"
             src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
             alt="background-image"
           />

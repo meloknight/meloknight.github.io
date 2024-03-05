@@ -28,9 +28,32 @@ $text-black: black;
   overflow: hidden;
 }
 
+@keyframes backgroundImagePan {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(400px, 400px);
+  }
+  50% {
+    transform: translate(0, 800px);
+  }
+  75% {
+    transform: translate(-400px, 400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .background-image-container {
   position: absolute;
   top: -1200px;
+  left: -600px;
+  animation: backgroundImagePan 100s ease infinite;
+}
+
+.pan-image {
 }
 
 .background-image-container img {
@@ -57,7 +80,10 @@ $text-black: black;
 }
 
 .main-container-hover:hover {
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
+  background-color: rgba(0, 0, 0, 0.685);
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
 }
 
 .desktop-nav-content {
@@ -98,6 +124,12 @@ $text-black: black;
 .home-centering-container {
   padding: 20px;
   width: 600px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rendered {
+  opacity: 1;
 }
 
 .first-name,
@@ -153,6 +185,12 @@ $text-black: black;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.76);
   border-radius: 0 20px 0 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rendered {
+  opacity: 1;
 }
 
 .contact-centering-container > h1 {
@@ -184,6 +222,12 @@ $text-black: black;
   width: 700px;
   padding: 30px;
   border-radius: 0 20px 0 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rendered {
+  opacity: 1;
 }
 
 .about-centering-container > h1 {
@@ -215,6 +259,12 @@ $text-black: black;
   justify-content: center;
   align-items: center;
   width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rendered {
+  opacity: 1;
 }
 
 .portfolio-section-title {

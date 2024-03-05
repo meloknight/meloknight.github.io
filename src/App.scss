@@ -11,7 +11,6 @@ $primary-color: white;
 $secondary-color: #f1e4c35b;
 $tertiary-color: #c6a969;
 $quaternary-color: #597e52;
-
 $text-black: black;
 
 .body-container {
@@ -26,14 +25,12 @@ $text-black: black;
   grid-template-rows: 6fr 1fr;
   gap: 10px;
   font-size: 4rem;
-  // text-transform: capitalize;
   overflow: hidden;
 }
 
 .background-image-container {
   position: absolute;
   top: -1200px;
-  // object-fit: contain;
 }
 
 .background-image-container img {
@@ -61,6 +58,14 @@ $text-black: black;
 
 .main-container-hover:hover {
   background-color: $secondary-color;
+}
+
+.desktop-nav-content {
+  display: block;
+}
+
+.mobile-nav-content {
+  display: none;
 }
 
 .contact-container {
@@ -230,6 +235,7 @@ $text-black: black;
 }
 
 .project-card {
+  position: relative;
   text-decoration: none;
   color: white;
   border: 1px solid white;
@@ -261,12 +267,20 @@ $text-black: black;
   overflow: hidden;
   position: relative;
   height: 70%;
-
   margin: 5px;
   border: 1px solid white;
   height: calc(70% - 18px);
   border-radius: 0 0 0 17px;
   overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .project-card-bottom > img {
@@ -299,17 +313,14 @@ $text-black: black;
   color: #cc6699;
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// RESPONSIVE MEDIA QUERY SECTION
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 @media (width <= 950px) {
   .body-container {
-    // padding: 10px;
-    // position: relative;
-    // font-family: "Inter", sans-serif;
-    // width: 100vw;
-    // background-color: $secondary-color;
-    // display: grid;
-
     min-height: 100vh;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
     font-size: 4rem;
@@ -317,10 +328,20 @@ $text-black: black;
 
   .main-container-hover {
     font-size: 2rem;
+    padding: 0 7px;
+  }
+
+  .desktop-nav-content {
+    display: none;
+  }
+
+  .mobile-nav-content {
+    display: block;
   }
 
   .primary-container {
     grid-area: 1 / 2 / 5 / 3;
+    overflow: auto;
   }
 
   .home-centering-container {
@@ -334,7 +355,19 @@ $text-black: black;
 
   .description-container > div,
   .tech-stack {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .tech-stack-container {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stack-icon {
+    font-size: 2rem;
   }
 
   .project-card-container {

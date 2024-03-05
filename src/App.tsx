@@ -8,6 +8,9 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaQuestionCircle } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -32,15 +35,15 @@ function App() {
         </div>
         <div className="description-container">
           <div>Front-End React Developer</div>
-          <div>
+          <div className="tech-stack-container">
             <span className="tech-stack">Tech Stack:</span>
 
-            <FaReact style={{ color: "#61dbfb" }} />
-            <SiJavascript style={{ color: "#F0DB4F" }} />
-            <FaHtml5 style={{ color: "#e34c26" }} />
-            <FaCss3Alt style={{ color: "#264de4" }} />
-            <SiTypescript style={{ color: "#007acc" }} />
-            <FaSass style={{ color: "#cc6699" }} />
+            <FaReact className="stack-icon" style={{ color: "#61dbfb" }} />
+            <SiJavascript className="stack-icon" style={{ color: "#F0DB4F" }} />
+            <FaHtml5 className="stack-icon" style={{ color: "#e34c26" }} />
+            <FaCss3Alt className="stack-icon" style={{ color: "#264de4" }} />
+            <SiTypescript className="stack-icon" style={{ color: "#007acc" }} />
+            <FaSass className="stack-icon" style={{ color: "#cc6699" }} />
           </div>
         </div>
       </div>
@@ -70,13 +73,13 @@ function App() {
           the Okanagan, BC.
         </h3>
         <p>
-          My current toolset rests in React, HTML, CSS, Javascript, Typescript,
-          and SCSS. I excel in the creation and maintenance of responsive
-          websites that offer a great user experience. I have dealt with
-          countless clients in my previous work in the insurance industry and
-          know how to manage client expectations while balancing a heavy
-          workload. I also have a degree in mechanical engineering which greatly
-          improved my problem solving skills and grit.
+          My current toolset is React, HTML, CSS, Javascript, Typescript, and
+          SCSS. I excel in the creation and maintenance of responsive websites
+          that offer a great user experience. I have dealt with countless
+          clients in my previous work in the insurance industry and know how to
+          manage client expectations while balancing a heavy workload. I also
+          have a degree in mechanical engineering which greatly improved my
+          problem solving skills and grit.
         </p>
       </div>
     );
@@ -124,6 +127,7 @@ function App() {
             </div>
             <div className="project-card-bottom project-1-card-bottom">
               <img src="src/assets/admin-dashboard-img.png" alt="project 1" />
+              <div className="overlay"></div>
             </div>
           </a>
           {/* CARD 2 */}
@@ -134,12 +138,14 @@ function App() {
             <div className="project-card-top">
               <h1>Weather App</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deleniti, quos. Inventore ratione dicta quidem culpa.
+                A weather app that allows users to input a city name and
+                displays real-time weather information, including temperature,
+                humidity, and wind speed.
               </p>
             </div>
             <div className="project-card-bottom project-2-card-bottom">
               <img src="src/assets/Weather-App.png" alt="project 1" />
+              <div className="overlay"></div>
             </div>
           </a>
           {/* CARD 3 */}
@@ -157,6 +163,7 @@ function App() {
             </div>
             <div className="project-card-bottom project-3-card-bottom">
               <img src="src/assets/Etch-A-Sketch-img.png" alt="project 1" />
+              <div className="overlay"></div>
             </div>
           </a>
         </div>
@@ -191,7 +198,8 @@ function App() {
           className="main-container contact-container main-container-hover nav-button"
           onClick={() => setPage("contact")}
         >
-          C
+          <div className="desktop-nav-content">CONTACT</div>
+          <MdEmail className="mobile-nav-content" />
         </section>
 
         <section className="primary-container">
@@ -211,13 +219,15 @@ function App() {
           className="about-container main-container-hover nav-button"
           onClick={() => setPage("about")}
         >
-          A
+          <div className="desktop-nav-content">ABOUT</div>
+          <FaQuestionCircle className="mobile-nav-content" />
         </section>
         <section
           className="portfolio-container main-container-hover nav-button"
           onClick={() => setPage("portfolio")}
         >
-          P
+          <div className="desktop-nav-content">PORTFOLIO</div>
+          <MdWork className="mobile-nav-content" />
         </section>
       </div>
     </>

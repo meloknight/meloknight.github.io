@@ -6,12 +6,12 @@
   padding: 0;
 }
 
-// $primary-color: #ffffece8;
 $primary-color: white;
-$secondary-color: #f1e4c35b;
-$tertiary-color: #c6a969;
-$quaternary-color: #597e52;
-$text-black: black;
+$secondary-color: rgba(0, 0, 0, 0.685);
+$dark-color: black;
+
+$text-light: white;
+$text-dark: black;
 
 .body-container {
   padding: 10px;
@@ -19,7 +19,6 @@ $text-black: black;
   font-family: "Inter", sans-serif;
   height: 100vh;
   width: 100vw;
-  background-color: $secondary-color;
   display: grid;
   grid-template-columns: 1fr 4fr 8fr;
   grid-template-rows: 6fr 1fr;
@@ -32,15 +31,15 @@ $text-black: black;
   0% {
     transform: translate(0, 0);
   }
-  25% {
+  50% {
     transform: translate(400px, 400px);
   }
-  50% {
-    transform: translate(0, 800px);
-  }
-  75% {
-    transform: translate(-400px, 400px);
-  }
+  // 50% {
+  //   transform: translate(0, 800px);
+  // }
+  // 75% {
+  //   transform: translate(-400px, 400px);
+  // }
   100% {
     transform: translateY(0);
   }
@@ -53,9 +52,6 @@ $text-black: black;
   animation: backgroundImagePan 100s ease infinite;
 }
 
-.pan-image {
-}
-
 .background-image-container img {
   object-fit: contain;
   width: 3000px;
@@ -63,27 +59,22 @@ $text-black: black;
 }
 
 .main-container-hover {
-  color: $text-black;
+  color: $text-dark;
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: $primary-color;
   transition: all 0.2s ease-in;
   z-index: 10;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid $dark-color;
   letter-spacing: 1rem;
   font-size: 2.5rem;
 }
 
-.main-container-hover-selected {
-  background-color: red;
-}
-
 .main-container-hover:hover {
-  // background-color: $secondary-color;
-  background-color: rgba(0, 0, 0, 0.685);
-  border: 2px solid rgb(255, 255, 255);
-  color: white;
+  background-color: $secondary-color;
+  border: 2px solid $primary-color;
+  color: $text-light;
 }
 
 .desktop-nav-content {
@@ -106,8 +97,8 @@ $text-black: black;
 }
 
 .primary-container {
-  background-color: rgba(0, 0, 0, 0.685);
-  border: 2px solid rgb(255, 255, 255);
+  background-color: $secondary-color;
+  border: 2px solid $primary-color;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -154,8 +145,8 @@ $text-black: black;
 .first-name > span,
 .last-name > span {
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  // text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+  //   1px 1px 0 #000;
 }
 
 .description-container > div {
@@ -165,8 +156,8 @@ $text-black: black;
   font-size: 2.5rem;
   margin-top: 30px;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  // text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+  //   1px 1px 0 #000;
 }
 
 .tech-stack {

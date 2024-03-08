@@ -32,7 +32,8 @@ function App() {
       <div className="body-container">
         <div className="background-image-container">
           <img
-            src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
+            // src="src/assets/pexels-ali-hamza-tullah-20008215.jpg"
+            src="public/assets/pexels-ali-hamza-tullah-20008215.jpg"
             alt="background-image"
           />
         </div>

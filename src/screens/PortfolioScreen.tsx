@@ -20,7 +20,7 @@ export default function PortfolioScreen() {
           summary={
             "A dashboard project created using HTML and CSS to display a grasp of the fundamentals of styling web pages."
           }
-          image={"src/assets/admin-dashboard-img.png"}
+          image={"public/assets/admin-dashboard-img.png"}
           imageTitle={"Admin Dashboard"}
         />
         <ProjectCard
@@ -29,7 +29,7 @@ export default function PortfolioScreen() {
           summary={
             "A weather app that allows users to input a city name and displays real-time weather information, including temperature, humidity,and wind speed."
           }
-          image={"src/assets/Weather-App.png"}
+          image={"public/assets/Weather-App.png"}
           imageTitle={"weather app"}
         />
         <ProjectCard
@@ -38,7 +38,7 @@ export default function PortfolioScreen() {
           summary={
             "A project created with Javascript, HTML, and CSS intended to showcase the use of logic and DOM manipulation with a small web application."
           }
-          image={"src/assets/Etch-A-Sketch-img.png"}
+          image={"public/assets/Etch-A-Sketch-img.png"}
           imageTitle={"etch-a-sketch"}
         />
       </div>

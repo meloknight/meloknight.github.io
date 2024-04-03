@@ -28,7 +28,7 @@ export default function HomeScreen() {
         <span>T</span>
       </div>
       <div className="description-container">
-        <div>Front-End React Developer</div>
+        <div>Front-End Web Developer</div>
         <div className="tech-stack-container">
           <span className="tech-stack">Tech Stack:</span>
 

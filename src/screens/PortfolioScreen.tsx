@@ -24,7 +24,7 @@ export default function PortfolioScreen() {
           imageTitle={"E-commerce landing page image"}
         />
         <ProjectCard
-          webpage={"meloknight.github.io/bean-ship-game/"}
+          webpage={"https://meloknight.github.io/bean-ship-game/"}
           title={"Bean Ship Game"}
           summary={
             "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."

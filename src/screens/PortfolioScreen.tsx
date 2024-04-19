@@ -15,15 +15,6 @@ export default function PortfolioScreen() {
       <div className="portfolio-section-title">Portfolio</div>
       <div className="project-card-container">
         <ProjectCard
-          webpage={"https://meloknight.github.io/ecommerce-website/"}
-          title={"E-Commerce Site"}
-          summary={
-            "A clean e-commerce site built with React and Sass. It is fully responsive with numerous pages and functionalities."
-          }
-          image={"../assets/MIN-landing-page-image.png"}
-          imageTitle={"E-commerce landing page image"}
-        />
-        <ProjectCard
           webpage={"https://meloknight.github.io/bean-ship-game/"}
           title={"Bean Ship Game"}
           summary={
@@ -32,7 +23,15 @@ export default function PortfolioScreen() {
           image={"../assets/bean-ship-screenshot.png"}
           imageTitle={"Bean Ship!"}
         />
-
+        <ProjectCard
+          webpage={"https://meloknight.github.io/ecommerce-website/"}
+          title={"E-Commerce Site"}
+          summary={
+            "A clean e-commerce site built with React and Sass. It is fully responsive with numerous pages and functionalities."
+          }
+          image={"../assets/MIN-landing-page-image.png"}
+          imageTitle={"E-commerce landing page image"}
+        />
         <ProjectCard
           webpage={"https://meloknight.github.io/Weather-App"}
           title={"Weather App"}

@@ -178,6 +178,7 @@ $text-dark: black;
   margin-bottom: 10px;
   font-size: 2rem;
   color: $text-light;
+  text-decoration: underline;
   // color: black;
 }
 
@@ -216,6 +217,7 @@ $text-dark: black;
   margin-bottom: 10px;
   font-size: 2rem;
   color: $text-light;
+  text-decoration: underline;
 }
 
 .about-centering-container > h3,
@@ -251,6 +253,8 @@ $text-dark: black;
   font-size: 4rem;
   margin-bottom: 30px;
   color: $text-light;
+  text-decoration: underline;
+  letter-spacing: 7px;
 }
 
 .project-card-container {
@@ -284,6 +288,7 @@ $text-dark: black;
 
 .project-card-top > h1 {
   padding-bottom: 16px;
+  text-decoration: underline;
   // border: 2px solid black;
 }
 

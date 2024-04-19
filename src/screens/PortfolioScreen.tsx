@@ -24,14 +24,15 @@ export default function PortfolioScreen() {
           imageTitle={"E-commerce landing page image"}
         />
         <ProjectCard
-          webpage={"https://meloknight.github.io/admin_dashboard/"}
-          title={"Admin Dashboard"}
+          webpage={"meloknight.github.io/bean-ship-game/"}
+          title={"Bean Ship Game"}
           summary={
-            "A dashboard project created using HTML and CSS to display a grasp of the fundamentals of styling web pages."
+            "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
           }
-          image={"../assets/admin-dashboard-img.png"}
-          imageTitle={"Admin Dashboard"}
+          image={"../assets/bean-ship-screenshot.png"}
+          imageTitle={"Bean Ship!"}
         />
+
         <ProjectCard
           webpage={"https://meloknight.github.io/Weather-App"}
           title={"Weather App"}
@@ -42,6 +43,23 @@ export default function PortfolioScreen() {
           imageTitle={"weather app"}
         />
         <ProjectCard
+          webpage={"https://meloknight.github.io/admin_dashboard/"}
+          title={"Admin Dashboard"}
+          summary={
+            "A dashboard project created using HTML and CSS to display a grasp of the fundamentals of styling web pages."
+          }
+          image={"../assets/admin-dashboard-img.png"}
+          imageTitle={"Admin Dashboard"}
+        />
+      </div>
+    </div>
+  );
+}
+
+// REMOVED BUT KEPT HERE FOR REFERENCE :)
+
+{
+  /* <ProjectCard
           webpage={"https://meloknight.github.io/Etch-A-Sketch/"}
           title={"Etch-A-Sketch"}
           summary={
@@ -49,10 +67,7 @@ export default function PortfolioScreen() {
           }
           image={"../assets/Etch-A-Sketch-img.png"}
           imageTitle={"etch-a-sketch"}
-        />
-      </div>
-    </div>
-  );
+        /> */
 }
 
 {

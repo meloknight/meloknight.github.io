@@ -15,13 +15,13 @@ export default function PortfolioScreen() {
       <div className="portfolio-section-title">Portfolio</div>
       <div className="project-card-container">
         <ProjectCard
-          webpage={"https://meloknight.github.io/bean-ship-game/"}
-          title={"Bean Ship Game"}
+          webpage={"https://meloknight.github.io/fishin-api-frontend/"}
+          title={"Fishin Api"}
           summary={
-            "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
+            "An api that lets you go fishin to your hearts content! Built with the PERN stack with backend hosted on Azure."
           }
-          image={"../assets/bean-ship-screenshot.png"}
-          imageTitle={"Bean Ship!"}
+          image={"../assets/fishin-api-hero.png"}
+          imageTitle={"fishin-api"}
         />
         <ProjectCard
           webpage={"https://meloknight.github.io/ecommerce-website/"}
@@ -33,22 +33,13 @@ export default function PortfolioScreen() {
           imageTitle={"E-commerce landing page image"}
         />
         <ProjectCard
-          webpage={"https://meloknight.github.io/Weather-App"}
-          title={"Weather App"}
+          webpage={"https://meloknight.github.io/bean-ship-game/"}
+          title={"Bean Ship Game"}
           summary={
-            "A weather app that allows users to input a city name and displays real-time weather information, including temperature, humidity,and wind speed."
+            "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
           }
-          image={"../assets/Weather-App.png"}
-          imageTitle={"weather app"}
-        />
-        <ProjectCard
-          webpage={"https://meloknight.github.io/admin_dashboard/"}
-          title={"Admin Dashboard"}
-          summary={
-            "A dashboard project created using HTML and CSS to display a grasp of the fundamentals of styling web pages."
-          }
-          image={"../assets/admin-dashboard-img.png"}
-          imageTitle={"Admin Dashboard"}
+          image={"../assets/bean-ship-screenshot.png"}
+          imageTitle={"Bean Ship!"}
         />
       </div>
     </div>

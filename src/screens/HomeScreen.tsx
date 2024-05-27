@@ -28,18 +28,26 @@ export default function HomeScreen() {
         <span>T</span>
       </div>
       <div className="description-container">
-        <div>Front-End Web Developer</div>
+        <div>Full-Stack Web Developer</div>
         <div className="tech-stack-container">
           <span className="tech-stack">Tech Stack:</span>
 
           <FaReact className="stack-icon" style={{ color: "#61dbfb" }} />
-          <SiJavascript className="stack-icon" style={{ color: "#F0DB4F" }} />
-          <FaHtml5 className="stack-icon" style={{ color: "#e34c26" }} />
-          <FaCss3Alt className="stack-icon" style={{ color: "#264de4" }} />
+
           <SiTypescript className="stack-icon" style={{ color: "#007acc" }} />
           <FaSass className="stack-icon" style={{ color: "#cc6699" }} />
         </div>
       </div>
     </div>
   );
+}
+
+{
+  /* <SiJavascript className="stack-icon" style={{ color: "#F0DB4F" }} /> */
+}
+{
+  /* <FaCss3Alt className="stack-icon" style={{ color: "#264de4" }} /> */
+}
+{
+  /* <FaHtml5 className="stack-icon" style={{ color: "#e34c26" }} /> */
 }

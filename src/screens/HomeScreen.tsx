@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
-import { FaReact, FaHtml5, FaCss3Alt, FaSass } from "react-icons/fa";
-import { SiJavascript, SiTypescript } from "react-icons/si";
+import { FaReact, FaSass } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+
+// SiJavascript, FaHtml5, FaCss3Alt,
 
 export default function HomeScreen() {
   const [isLoaded, setIsLoaded] = useState(false);

@@ -15,6 +15,7 @@ export default function PortfolioScreen() {
       <div className="portfolio-section-title">Portfolio</div>
       <div className="project-card-container">
         <ProjectCard
+          titleColor={"green"}
           webpage={"https://meloknight.github.io/fishin-api-frontend/"}
           title={"Fishin Api"}
           summary={
@@ -24,6 +25,7 @@ export default function PortfolioScreen() {
           imageTitle={"fishin-api"}
         />
         <ProjectCard
+          titleColor={"red"}
           webpage={"https://meloknight.github.io/ecommerce-website/"}
           title={"E-Commerce Site"}
           summary={
@@ -33,6 +35,7 @@ export default function PortfolioScreen() {
           imageTitle={"E-commerce landing page image"}
         />
         <ProjectCard
+          titleColor={"brown"}
           webpage={"https://meloknight.github.io/bean-ship-game/"}
           title={"Bean Ship Game"}
           summary={

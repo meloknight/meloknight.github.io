@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
-import { FaReact, FaSass } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
+import { SiTypescript, SiExpress } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 // SiJavascript, FaHtml5, FaCss3Alt,
 
@@ -32,12 +33,16 @@ export default function HomeScreen() {
       <div className="description-container">
         <div>Full-Stack Web Developer</div>
         <div className="tech-stack-container">
-          <span className="tech-stack">Tech Stack:</span>
-
+          <span className="tech-stack">Stack:</span>
           <FaReact className="stack-icon" style={{ color: "#61dbfb" }} />
-
           <SiTypescript className="stack-icon" style={{ color: "#007acc" }} />
           <FaSass className="stack-icon" style={{ color: "#cc6699" }} />
+          <FaNodeJs className="stack-icon" style={{ color: "#6cc24a" }} />
+          <SiExpress className="stack-icon" />
+          <BiLogoPostgresql
+            className="stack-icon"
+            style={{ color: "#008bb9" }}
+          />
         </div>
       </div>
     </div>

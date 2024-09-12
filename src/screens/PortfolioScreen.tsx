@@ -52,7 +52,7 @@ export default function PortfolioScreen() {
             "Simulates a competitive distance runner season by generating numerous teams of runners and racing them."
           }
           image={"../assets/runner-season-sim-image.png"}
-          imageTitle={"Bean Ship!"}
+          imageTitle={"Runner Sim"}
         />
       </div>
     </div>

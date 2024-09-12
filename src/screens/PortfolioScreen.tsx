@@ -46,7 +46,7 @@ export default function PortfolioScreen() {
         />
         <ProjectCard
           titleColor={"black"}
-          webpage={"https://brodyknight.ca/distance-runner-season-sim/"}
+          webpage={"https://meloknight.github.io/distance-runner-season-sim/"}
           title={"Runner Sim"}
           summary={
             "Simulates a competitive distance runner season by generating numerous teams of runners and racing them."

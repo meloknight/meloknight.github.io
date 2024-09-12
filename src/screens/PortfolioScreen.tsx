@@ -27,9 +27,9 @@ export default function PortfolioScreen() {
         <ProjectCard
           titleColor={"black"}
           webpage={"https://meloknight.github.io/ecommerce-website/"}
-          title={"E-Commerce Site"}
+          title={"Min Store"}
           summary={
-            "A clean e-commerce site built with React and Sass. It is fully responsive with numerous pages and functionalities."
+            "An e-commerce site built with React and Sass. It is fully responsive with numerous pages and functionalities."
           }
           image={"../assets/MIN-landing-page-image.png"}
           imageTitle={"E-commerce landing page image"}
@@ -42,6 +42,16 @@ export default function PortfolioScreen() {
             "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
           }
           image={"../assets/bean-ship-screenshot.png"}
+          imageTitle={"Bean Ship!"}
+        />
+        <ProjectCard
+          titleColor={"black"}
+          webpage={"https://brodyknight.ca/distance-runner-season-sim/"}
+          title={"Runner Sim"}
+          summary={
+            "Simulates a competitive distance runner season by generating numerous teams of runners and racing them."
+          }
+          image={"../assets/runner-season-sim-image.png"}
           imageTitle={"Bean Ship!"}
         />
       </div>

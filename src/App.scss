@@ -261,7 +261,7 @@ $text-dark: black;
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -269,8 +269,8 @@ $text-dark: black;
   position: relative;
   text-decoration: none;
   color: $text-dark;
-  width: 250px;
-  height: 400px;
+  width: 230px;
+  height: 380px;
   transition: all 0.3s;
   border-radius: 0 20px 0 20px;
   background-color: $primary-color;
@@ -287,7 +287,7 @@ $text-dark: black;
 }
 
 .project-card-top > h1 {
-  padding-bottom: 16px;
+  padding-bottom: 6px;
   text-decoration: underline;
   // border: 2px solid black;
 }

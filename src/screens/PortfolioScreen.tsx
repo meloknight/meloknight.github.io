@@ -16,12 +16,12 @@ export default function PortfolioScreen() {
       <div className="project-card-container">
         <ProjectCard
           titleColor={"black"}
-          webpage={"https://fishinapi.ca/"}
-          title={"Fishin Api"}
+          webpage={"https://habitcalendar.ca/"}
+          title={"Habit Calendar"}
           summary={
-            "An api that lets you go fishin to your hearts content! Built with the PERN stack with backend hosted on Azure."
+            "A C# MVC web app that tracks 5 user habits over long periods of time to see their habit patterns. It uses Azure SQL database to store user and habit information."
           }
-          image={"../assets/fishin-api-hero.png"}
+          image={"../assets/habitcalendar-tile-img.png"}
           imageTitle={"fishin-api"}
         />
         <ProjectCard
@@ -37,7 +37,7 @@ export default function PortfolioScreen() {
         <ProjectCard
           titleColor={"black"}
           webpage={"https://meloknight.github.io/bean-ship-game/"}
-          title={"Bean Ship Game"}
+          title={"Bean Ship"}
           summary={
             "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
           }

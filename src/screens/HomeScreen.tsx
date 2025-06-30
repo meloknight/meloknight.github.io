@@ -31,8 +31,8 @@ export default function HomeScreen() {
         <span>T</span>
       </div>
       <div className="description-container">
-        <div>Full-Stack Web Developer</div>
-        <div className="tech-stack-container">
+        <div>Full-Stack Developer</div>
+        {/* <div className="tech-stack-container">
           <span className="tech-stack">Stack:</span>
           <FaReact className="stack-icon" style={{ color: "#61dbfb" }} />
           <SiTypescript className="stack-icon" style={{ color: "#007acc" }} />
@@ -43,7 +43,7 @@ export default function HomeScreen() {
             className="stack-icon"
             style={{ color: "#008bb9" }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

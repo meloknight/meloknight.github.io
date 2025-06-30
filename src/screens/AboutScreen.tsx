@@ -12,16 +12,24 @@ export default function AboutScreen() {
       <h1>About Me</h1>
       <h3>
         Hello, my name is Brody and I am a full-stack web developer based in
-        Kelowna, BC.
+        British Columbia.
       </h3>
       <p>
+        My developer experience involves fullstack work using React / Typescript
+        / SCSS / Node.js and, more recently, C# .NET web apps. I have worked
+        with PostgreSQL, SQL Server, and Azure SQL Database. I use Figma for
+        designing and I primarily host projects on Azure. In my previous work in
+        the insurance industry I worked with countless clients and know how to
+        communicate and manage expectations.
+      </p>
+      {/* <p>
         My current experience involves numerous front-end projects with React,
         Typescript, and SCSS. I have also built a number of full-stack projects
         with Node.js, Express.js, and PostgreSQL. I use Figma for my design work
         and have hosted projects on Microsoft Azure. In my previous work in the
         insurance industry I worked with countless clients and know how to
         communicate and manage client expectations.
-      </p>
+      </p> */}
     </div>
   );
 }

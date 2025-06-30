@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
-import { SiTypescript, SiExpress } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
+// import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
+// import { SiTypescript, SiExpress } from "react-icons/si";
+// import { BiLogoPostgresql } from "react-icons/bi";
 
 // SiJavascript, FaHtml5, FaCss3Alt,
 

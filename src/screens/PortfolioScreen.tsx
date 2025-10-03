@@ -19,10 +19,18 @@ export default function PortfolioScreen() {
           webpage={"https://habitcalendar.ca/"}
           title={"Habit Calendar"}
           summary={
-            "A C# MVC web app that tracks 5 user habits over long periods of time to see their habit patterns. It uses Azure SQL database to store user and habit information."
+            "A C# MVC web app that tracks 5 user habits over long periods of time to see their habit patterns."
           }
           image={"../assets/habitcalendar-tile-img.png"}
           imageTitle={"fishin-api"}
+        />
+        <ProjectCard
+          titleColor={"black"}
+          webpage={"https://set-h.ca/"}
+          title={"Set-H Daily Puzzle"}
+          summary={"A daily puzzle game built with JavaScript, HTML, CSS."}
+          image={"../assets/set-h-screenshot.png"}
+          imageTitle={"Set-H"}
         />
         <ProjectCard
           titleColor={"black"}
@@ -33,16 +41,6 @@ export default function PortfolioScreen() {
           }
           image={"../assets/MIN-landing-page-image.png"}
           imageTitle={"E-commerce landing page image"}
-        />
-        <ProjectCard
-          titleColor={"black"}
-          webpage={"https://meloknight.github.io/bean-ship-game/"}
-          title={"Bean Ship"}
-          summary={
-            "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
-          }
-          image={"../assets/bean-ship-screenshot.png"}
-          imageTitle={"Bean Ship!"}
         />
         <ProjectCard
           titleColor={"black"}
@@ -70,6 +68,19 @@ export default function PortfolioScreen() {
           }
           image={"../assets/Etch-A-Sketch-img.png"}
           imageTitle={"etch-a-sketch"}
+        /> */
+}
+
+{
+  /* <ProjectCard
+          titleColor={"black"}
+          webpage={"https://meloknight.github.io/bean-ship-game/"}
+          title={"Bean Ship"}
+          summary={
+            "A small game built in React and Typescript of a bean-shaped ship that boosts around and bounces off the walls."
+          }
+          image={"../assets/bean-ship-screenshot.png"}
+          imageTitle={"Bean Ship!"}
         /> */
 }
 

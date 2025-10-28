@@ -18,7 +18,8 @@ export default function HomeScreen() {
       <div className="first-name">
         <span>B</span>
         <span>R</span>
-        <span>&#123; &#125;</span>
+        {/* <span>&#123; &#125;</span> */}
+        <span>O</span>
         <span>D</span>
         <span>Y</span>
       </div>
@@ -31,7 +32,7 @@ export default function HomeScreen() {
         <span>T</span>
       </div>
       <div className="description-container">
-        <div>Full-Stack Developer</div>
+        <div></div>
         {/* <div className="tech-stack-container">
           <span className="tech-stack">Stack:</span>
           <FaReact className="stack-icon" style={{ color: "#61dbfb" }} />
